@@ -32,11 +32,10 @@ body{
 }
 
   .logo{
-    width:45px;
+    width:55px;
     height:45px;
     padding:6px;
-    border-radius:12px;
-    background:#f8fafc;
+    border-radius:32px;
     box-shadow:0 4px 10px rgba(0,0,0,0.08);
     object-fit:contain;
 }
@@ -408,6 +407,7 @@ body{
 
 .footer-logo img{
     width:40px;
+    border-radius: 20PX;
 }
 
 /* TEXT */
