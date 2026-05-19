@@ -12,50 +12,123 @@ body{
 }
 
 /* ================= NAVBAR ================= */
+
 .navbar{
+    width:100%;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
     padding:15px 40px;
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid rgba(255,255,255,0.1);
+    background:#0f172a;
     position:sticky;
     top:0;
     z-index:1000;
 }
 
+/* LOGO AREA */
 .logo-container{
     display:flex;
     align-items:center;
     gap:10px;
 }
 
-  .logo{
-    width:55px;
+.logo{
+    width:45px;
     height:45px;
-    padding:6px;
-    border-radius:32px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.08);
-    object-fit:contain;
+    border-radius:50%;
+    object-fit:cover;
 }
 
+.logo-text h1{
+    font-size:18px;
+    color:#fff;
+    line-height:1;
+    margin:0;
+}
 
+.logo-text span{
+    color:#cbd5e1;
+    font-size:12px;
+}
+
+/* NAV LINKS */
 .nav-links{
     display:flex;
-    gap:25px;
+    align-items:center;
+    gap:30px;
     list-style:none;
 }
 
 .nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#3b82f6;
+}
+
+/* TOGGLE BUTTON */
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:#fff;
     cursor:pointer;
-    transition:0.3s;
 }
 
-.nav-links li:hover{
-    color:#38bdf8;
-}
+/* ================= MOBILE ================= */
 
+@media(max-width:900px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    /* SHOW TOGGLE */
+    .menu-toggle{
+        display:block;
+    }
+
+    /* HIDE MENU */
+    .nav-links{
+        position:absolute;
+        top:75px;
+        left:0;
+        width:100%;
+
+        background:#0f172a;
+
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:25px;
+        padding:30px 0;
+
+        display:none;
+    }
+
+    /* SHOW MENU */
+    .nav-links.active{
+        display:flex;
+    }
+
+    /* CENTER LOGO TEXT */
+    .logo-text h1{
+        font-size:16px;
+    }
+
+    .logo-text span{
+        font-size:11px;
+    }
+}
 /* ================= CONTAINER ================= */
 .container{
     width:90%;
