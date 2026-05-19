@@ -22,3 +22,6 @@ cards.forEach(card => {
   });
 });
 
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
