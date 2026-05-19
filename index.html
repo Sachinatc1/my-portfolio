@@ -9,19 +9,35 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar">
-  <div class="logo-container">
-    <img src="https://i.ibb.co/SDRW6qmX/logo.png" class="logo">
-    <h3>Atharv Tech Co.</h3>
-  </div>
+  <!-- ================= NAVBAR ================= -->
 
-  <ul class="nav-links">
-    <li>Home</li>
-    <li>Services</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
+<nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo-container">
+
+        <img src="https://i.ibb.co/SDRW6qmX/logo.png" alt="logo" class="logo">
+
+        <div class="logo-text">
+            <h1>Atharv</h1>
+            <h1>Tech Co.</h1>
+        </div>
+
+    </div>
+
+    <!-- MENU -->
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- TOGGLE BUTTON -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
 </nav>
 
 <section class="hero">
@@ -193,6 +209,6 @@
   </div>
 
 </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
